@@ -1,0 +1,12 @@
+OPTIONS = -std=c++17
+INCLUDES = -I .
+GRAPHS = DenseGraph.h SparseGraph.h
+OPTIOBJ = GraphPath.h Edge.h GraphIterator.h RandomGraphGenerator.h VertexDegree.h
+ALLOBJ = GraphLibrary.o 
+OUTPUT = GraphLibrary.o
+output: $(OUTPUT)
+	g++ $(OPTIONS) $(ALLOBJ) -o output
+GraphLibrary.o : 
+	g++ -c $(OPTIONS) $(INCLUDES) GraphLibrary.cpp
+clean :   
+	del $(ALLOBJ) output
