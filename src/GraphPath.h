@@ -2,7 +2,6 @@
 #include "IncorporatedLogger.h"
 #include "Exception.h"
 #include "WeightedGraph.h"
-
 #include <vector>
 #include <list>
 #include <stack>

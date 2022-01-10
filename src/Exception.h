@@ -1,7 +1,8 @@
 #pragma once
 #include <stdexcept>
 #include <windows.h>
-
+//распределить логи и распределить исключения
+//алгоритм дейкстры
 #if 1
 class GraphException{
 	//const std::string* file;
